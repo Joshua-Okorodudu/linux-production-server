@@ -142,3 +142,79 @@ The output included services such as:
 - `systemd-journald.service`
 - `systemd-networkd.service`
 - `systemd-resolved.service`
+
+---
+
+## Evidence — Hands-On Lab Screenshots
+
+The following screenshots provide evidence of the practical exercises completed during this project.
+
+### 1. Listing Linux Services
+
+The systemd service list was examined using:
+
+```bash
+systemctl list-units --type=service
+```
+
+![Systemctl service list](screenshots/01-systemctl-list-services.png)
+
+### 2. Checking SSH Service Status
+
+The SSH service was verified using:
+
+```bash
+systemctl status ssh
+```
+
+The service was confirmed to be active and running.
+
+![SSH service status](screenshots/02-systemctl-status-ssh.png)
+
+### 3. Identifying the SSH Process
+
+The SSH daemon was located using:
+
+```bash
+pgrep -a sshd
+```
+
+The SSH process was identified with PID 1315.
+
+![SSH process and PID](screenshots/03-pgrep-sshd-pid-1315.png)
+
+### 4. Inspecting Process Information
+
+Detailed information about the SSH process was examined through `/proc`:
+
+```bash
+cat /proc/1315/status
+```
+
+![Process status information](screenshots/04-proc-1315-status.png)
+
+### 5. Examining Process Hierarchy
+
+The Linux process hierarchy was examined using:
+
+```bash
+pstree -p 1
+```
+
+This demonstrated the relationship between PID 1 (`systemd`) and the SSH daemon.
+
+![Process hierarchy](screenshots/05-pstree-process-hierarchy.png)
+
+### 6. Background Process and Termination
+
+A harmless background process was created and then terminated:
+
+```bash
+sleep 300 &
+pgrep -a sleep
+kill 31148
+```
+
+The process was subsequently verified to confirm that it had terminated.
+
+![Background process and termination](screenshots/06-background-process-kill.png)

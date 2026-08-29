@@ -43,7 +43,7 @@ Every project includes:
 | Project 01 – Linux User & Group Management | ✅ Complete | Users, Groups, Permissions, Ownership |
 | Project 02 – Linux System Services         | ✅ Complete  | systemctl, journalctl                 |
 | Project 03 – SSH Hardening                 | ✅ Complete | SSH Administration                    |
-| Project 04 – Nginx Web Server              | 🚧 Planned  | Web Server Administration             |
+| Project 04 – Nginx Web Server              | ✅ Complete  | Web Server Administration             |
 | Project 05 – Storage & LVM                 | 🚧 Planned  | Storage Management                    |
 | Project 06 – Bash Automation               | 🚧 Planned  | Shell Scripting                       |
 | Project 07 – System Monitoring             | 🚧 Planned  | Logs, Monitoring                      |

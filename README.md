@@ -41,7 +41,7 @@ Every project includes:
 | Project                                    | Status      | Skills                                |
 | ------------------------------------------ | ----------- | ------------------------------------- |
 | Project 01 – Linux User & Group Management | ✅ Complete | Users, Groups, Permissions, Ownership |
-| Project 02 – Linux System Services         | 🚧 Planned  | systemctl, journalctl                 |
+| Project 02 – Linux System Services         | ✅ Complete  | systemctl, journalctl                 |
 | Project 03 – SSH Hardening                 | 🚧 Planned  | SSH Administration                    |
 | Project 04 – Nginx Web Server              | 🚧 Planned  | Web Server Administration             |
 | Project 05 – Storage & LVM                 | 🚧 Planned  | Storage Management                    |
